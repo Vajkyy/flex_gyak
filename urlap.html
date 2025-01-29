@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="hu">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="urlap.css" />
+    <title>Űrlap</title>
+  </head>
+  <body>
+    <main>
+      <header><h1>Űrlap</h1></header>
+      <nav>
+        <ul>
+          <li><a href="index.html">Kezdőlap</a></li>
+          <li><a href="urlap.html">Űrlap</a></li>
+        </ul>
+      </nav>
+      <article>
+        <form>
+          <fieldset>
+            <legend>Alapvető adatok</legend>
+            <div class="adatok">
+              <label for="vez_nev">Vezetéknév</label>
+              <input type="text" name="nev" id="nev" placeholder="Kolompár" />
+            </div>
+            <div class="adatok">
+              <label for="ker_nev">Keresztnév</label>
+              <input
+                type="text"
+                name="ker_nev"
+                id="ker_nev"
+                placeholder="József"
+              />
+            </div>
+            <div class="adatok">
+              <label for="email">E-mail cím</label>
+              <input
+                type="text"
+                name="email"
+                id="email"
+                placeholder="valami@valami.hu"
+              />
+            </div>
+            <div class="adatok">
+              <label for="tel">Telefonszám</label>
+              <input
+                type="text"
+                name="tel"
+                id="tel"
+                placeholder="+36-30-3333-333"
+              />
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Lakcím</legend>
+            <div class="cim-adatok">
+              <label for="cim">Cím</label>
+              <input
+                type="text"
+                name="cim"
+                id="cim"
+                placeholder="Fiúmei utca 14"
+              />
+            </div>
+            <div class="cim-adatok">
+              <label for="iranyito_szam">Irányítószám</label>
+              <input
+                type="text"
+                name="iranyito_szam"
+                id="iranyito_szam"
+                placeholder="2315"
+              />
+            </div>
+            <div class="cim-adatok">
+              <label for="varos">Település</label>
+              <input
+                type="text"
+                name="varos"
+                id="varos"
+                placeholder="Szigethalom"
+              />
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Születési adatok</legend>
+            <div class="szul-adatok">
+              <label for="szul">Születési dátum</label>
+              <input type="date" name="szul" id="szul" />
+            </div>
+            <div class="szul-adatok">
+              <div class="radio">
+                <label for="ferfi">Férfi</label>
+                <input type="radio" id="ferfi" name="nem" value="Férfi" />
+                <label for="no">Nő</label>
+                <input type="radio" id="no" name="nem" value="Nő" />
+                <label for="egyeb">Egyéb</label>
+                <input type="radio" id="egyeb" name="nem" value="Egyéb" />
+              </div>
+            </div>
+            <div class="szul-adatok">
+              <label for="szul_hely">Születési hely</label>
+              <input
+                type="text"
+                name="szul_hely"
+                id="szul_hely"
+                placeholder="Budapest"
+              />
+            </div>
+            <div class="szul-adatok">
+              <label for="orszag">Ország</label>
+              <select name="orszag" id="orszag">
+                <option value="magyarorszag">Magyarország</option>
+                <option value="nemet">Németország</option>
+                <option value="lengyel">Lengyelország</option>
+                <option value="ukran">Ukrajna</option>
+                <option value="romania">Románia</option>
+              </select>
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend>Tanulmányi adatok</legend>
+            <div class="tal-adatok">
+              <label for="alt">Általános iskola</label>
+              <input
+                type="checkbox"
+                name="alt"
+                id="alt"
+                value="Általános iskola"
+              />
+            </div>
+            <div class="tal-adatok">
+              <label for="koz">Szakképzés</label>
+              <input type="checkbox" name="koz" id="koz" value="Szakképzés" />
+            </div>
+            <div class="tal-adatok">
+              <label for="erettsegi">Érettségi</label>
+              <input
+                type="checkbox"
+                name="erettsegi"
+                id="erettsegi"
+                value="Érettségi"
+              />
+            </div>
+            <div class="tal-adatok">
+              <label for="foiskola">Főiskola</label>
+              <input
+                type="checkbox"
+                name="foiskola"
+                id="foiskola"
+                value="Főiskola"
+              />
+            </div>
+            <div class="tal-adatok">
+              <label for="egyetem">Egyetem</label>
+              <input
+                type="checkbox"
+                name="egyetem"
+                id="egyetem"
+                value="Egyetem"
+              />
+            </div>
+          </fieldset>
+          <div>
+            <input type="submit" value="Elfogad" id="Submit" />
+          </div>
+        </form>
+      </article>
+      <footer>&copy; Hóman Vajk Gábor</footer>
+    </main>
+  </body>
+</html>
